@@ -95,7 +95,7 @@ detokenise ( const unsigned char* code )
 				return;
 			}
 			p = p + linelen - 3;
-			if ( 13 == *p && 0xff == 0xff ) {
+			if ( *p == 0xff ) {
 				eop = 1;
 			}
 		} while ( !eop );
